@@ -22,3 +22,9 @@ pub struct User {
     email: String,
     password_hash: String,
 }
+
+pub struct NewUser {
+    name: String,
+    email: String,
+    password: String,
+}
