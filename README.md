@@ -30,12 +30,12 @@ The goal is not to be "fast enough". The goal is to be the fastest.
 
 CoralBB will be structured as a Cargo workspace using **Hexagonal Architecture** (Ports & Adapters):
 
-- `coralbb-core` — domain models and port traits, zero external dependencies
-- `coralbb-app` — services and use cases, depends only on core
-- `coralbb-db` — sqlx adapter implementing core ports
-- `coralbb-cache` — moka and Redis adapters
-- `coralbb-web` — Axum handlers and Askama templates
-- `coralbb-cli` — admin tooling
+- `coral-bb-core` — domain models and port traits, zero external dependencies
+- `coral-bb-app` — services and use cases, depends only on core
+- `coral-bb-db` — sqlx adapter implementing core ports
+- `coral-bb-cache` — moka and Redis adapters
+- `coral-bb-web` — Axum handlers and Askama templates
+- `coral-bb-cli` — admin tooling
 
 The core never depends on infrastructure. Boundaries are enforced by the compiler through `Cargo.toml`, not just by convention.
 
