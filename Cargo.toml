@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["crates/coral-bb-core"]
+members = ["crates/coral-bb-app","crates/coral-bb-core"]
 
 [workspace.package]
 version = "0.0.1"
